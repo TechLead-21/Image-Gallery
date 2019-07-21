@@ -1,0 +1,43 @@
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.wrapper {
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  margin: 0 auto;
+  transform: scale(1.25);
+  width: 510px;
+}
+
+a {
+  display: block;
+  height: 150px;
+  margin: 10px;
+  width: 150px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+}
+
+
+a img {
+  transform: scale(0.5) translate(-50%, -50%);
+  transition: all 400ms;
+}
+a:focus img {
+  border: solid 5px #fff;
+  box-shadow: 0 0 10rem 0 black;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: scale(1) translate(-50%, -50%);
+  z-index: 1;
+}
